@@ -1,0 +1,17 @@
+{
+  "name": "Set Video Speed",
+  "description": "Set a custom speeed to watch videos at!",
+  "version": "0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Change the player's speed"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["tabs", "scripting"]
+}
